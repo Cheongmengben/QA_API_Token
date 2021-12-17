@@ -155,8 +155,21 @@ Create Another
     press keys      //*[@name="token_name"]     ENTER
 
 Copy
-    //*[text()="NCZx9XvAL3URGCI" and contains (@class, "dc-text")]//parent::div
-    //*[text()="NCZx9XvAL3URGCI" and contains @class, "dc-icon dc-clipboard da-api-token__clipboard"]
+    wait until page contains element        //*[@class="dc-icon dc-clipboard da-api-token__clipboard"]
+    element should be enabled       //*[@class="dc-icon dc-clipboard da-api-token__clipboard"]
+    Click element   //*[@class="dc-icon dc-clipboard da-api-token__clipboard"]
+
+Delete
+    element should be enabled       //*[@class="dc-btn dc-btn--secondary dc-btn__small"]
+    Click element   //*[@class="dc-btn dc-btn--secondary dc-btn__small"]
+
+No
+    wait until page contains element       //*[text()="No" and contains (@class, "dc-text dc-btn__text")]//parent::button
+    Click element   //*[text()="No" and contains (@class, "dc-text dc-btn__text")]//parent::button
+
+Yes
+    wait until page contains element        //*[text()="Yes" and contains (@class, "dc-text dc-btn__text")]//parent::button
+    Click element   //*[text()="Yes" and contains (@class, "dc-text dc-btn__text")]//parent::button
 
 
 

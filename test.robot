@@ -29,5 +29,12 @@ Open Browser
     Token Creation
 Create Token
     Create
-Create Token (Enter)
-    Create Another
+#Create Token (Enter)
+#    Create Another
+Copy element check
+    Copy
+Delete button
+    Delete
+    No
+    Delete
+    Yes
